@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "180322139676",
+    "project_id": "mobilestarterkit",
+    "storage_bucket": "mobilestarterkit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180322139676:android:dca26f206956b928f7e9d9",
+        "android_client_info": {
+          "package_name": "com.example.mobile_starter_kit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkVQCODnsX_JYzUhRqTqC_WOkQJNOOEJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

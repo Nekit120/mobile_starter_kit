@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,9 +8,11 @@ import 'core/domain/di/di_container.dart';
 import 'core/domain/intl/generated/l10n.dart';
 import 'core/presentation/keyboard_dismis.dart';
 import 'feature/settings/domain/service/app_settings_bloc.dart';
+import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await DIContainer.instance.initDependencies();
   runApp(MainApp(
     appSettingsBloc: DIContainer.instance.get<AppSettingsBloc>(),
