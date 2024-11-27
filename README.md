@@ -1,59 +1,64 @@
 # mobile_starter_kit
 
-Это стартовый шаблон для мобильного приложения на Flutter. Этот проект содержит все необходимые базовые компоненты для начала разработки мобильных приложений с использованием Flutter.
+This is a starter template for a mobile application built with Flutter. This project contains all the essential components to kickstart your mobile app development with Flutter.
 
-## Описание
+## Description
 
-Проект включает в себя:
+The project includes the following:
 
-### 1. **Структура проекта по принципам Clean Architecture**
+### 1. **Project Structure Based on Clean Architecture**
 
-Организация кода с разделением на слои (представление, бизнес-логика, данные) для улучшения поддерживаемости и масштабируемости приложения.
+Code organization with separation into layers (presentation, domain, data) to improve maintainability and scalability of the app.
 
-### 2. **Инициализация зависимостей с помощью DI (Dependency Injection)**
+### 2. **Dependency Injection (DI) Initialization**
 
-Реализована интеграция с DI контейнером для удобного управления зависимостями и их тестирования.
+Integration with a DI container for convenient management of dependencies and their testing.
 
-### 3. **Шаблон для работы с состояниями (State Management)**
+### 3. **State Management Template**
 
-Базовая настройка для работы с состояниями приложения с использованием популярных подходов, таких как:
+Basic setup for managing app states using popular approaches, such as:
 - BLoC
-- Provider
+- Cubit
 
-### 4. **Интерфейс для локальных уведомлений**
 
-Настроен механизм локальных уведомлений с использованием **Flutter Local Notifications**.
+### 4. **Local Notifications Interface**
 
-### 5. **Работа с хранилищем данных**
+Configured local notification mechanism using **Flutter Local Notifications**.
 
-Интеграция с локальными хранилищами данных:
+### 5. **Data Storage Integration**
+
+Integration with local data storage solutions:
 - **SharedPreferences**
 - **SecureStorage**
+- **Sqflite**
 
-Для хранения пользовательских настроек и данных.
+For storing user settings and data.
 
-### 6. **Сетевые запросы и обработка ошибок**
+### 6. **Network Requests and Error Handling**
 
-В проекте уже настроен **Dio** и его перехватчики для работы с сетевыми запросами, а также обработка ошибок, включая работу с невалидными сертификатами.
+The project is set up with **Dio** and its interceptors to handle network requests, including error handling for invalid certificates.
 
-### 7. **Подключение Firebase (по желанию)**
+### 7. **Firebase Integration (Optional)**
 
-Реализована базовая интеграция с **Firebase** для использования таких сервисов, как:
+
+Basic integration with **Firebase** to use services like:
+
 - **Firebase Analytics**
+
 - **Firebase Crashlytics**
 
-### 8. **Гибкость в настройке тем**
+### 8. **Theme Customization Flexibility**
 
-Предусмотрена возможность динамической смены темы приложения с сохранением настроек пользователя.
+Ability to dynamically switch the app's theme while preserving user settings.
 
-### 9. **Система авторизации**
+### 9. **Authentication System**
 
-Шаблон для работы с авторизацией и хранением токенов, поддерживающий различные методы аутентификации.
+Template for working with authentication and token storage, supporting various authentication methods.
 
 ---
 
-## Начало работы
+## Getting Started
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/mobile_starter_kit.git
